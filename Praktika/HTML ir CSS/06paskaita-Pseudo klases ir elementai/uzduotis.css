@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: white;
+    position: sticky;
+    top:0;
+    padding-top: 5px;
+    text-align: center;
+}
+header img {
+    height: 50px;
+}
+nav {
+    background: #0b680b;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+[id]{
+    scroll-margin-top: 100px;
+}
+section.grey-block {
+    padding: 20px;
+    background: #eee;
+  }
+.logotipas{
+text-align: center;
+}
+.Menu{
+ background-color: green;
+ color: white;
+text-align: center;
+height: 50px;
+position: sticky ;
+text-align: center;
+}
+section.green-block {
+ padding: 20px;
+background: #d7ffd7;
+}
+  
+section img {
+width: 100%;
+}
+  
+h1 {
+background: #0b680b;
+color: white;
+padding: 10px;
+margin-top: 0;
+}
+  
+.grey-block h1 {
+margin-top: 20px;
+}

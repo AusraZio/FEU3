@@ -1,0 +1,110 @@
+#grid{
+display: grid;
+justify-items: center;
+grid-template-columns: repeat(3, 1fr);
+}
+#grid h1{
+grid-column-start: 1;    
+grid-column-end: 4;
+/*text-align: center;*/
+}
+
+.gridContainer1{
+display: grid;
+gap: 10px;
+/*grid-template-columns: 50px 100px 20px;
+grid-template-rows: repeat(3, 20px 100px);*/
+grid-template: repeat(3, 20px 100px) / 50px 100px 20px 10px;
+}
+
+.gridContainer1 > div{
+background-color: black;
+color: white;
+}
+
+.gridContainer1 :nth-child(1){
+/*grid-column-start: 2;
+grid-column-end: 5;
+grid-row-start: 4;
+grid-row-end: 6;*/
+/*grid-row: 4 / 6;
+grid-column: 2 / 5;*/
+grid-area: 4 / 2 / 6 / 5;
+}
+
+
+.gridContainer2{
+display: grid;
+grid-template: repeat(500, 1px) / repeat(100, 1px);
+}
+.gridContainer2 .header{
+grid-area: 1 / 1 / 80 / -1;
+background-color: aquamarine;
+}
+.gridContainer2 .main{
+grid-area: 80 / 150 / 420 / -1;
+background-color: rgb(255, 127, 197);
+}
+.gridContainer2 .aside{
+grid-area: 80 / 1 / 420 / 150;
+background-color: rgb(215, 108, 59);
+}
+.gridContainer2 .footer{
+grid-area: 420 / 1 / -1 / -1;
+background-color: rgb(169, 31, 31);
+}
+.gridContainer3{
+display: grid;
+grid-template: repeat(10, 30px) / repeat(10, 30px);
+}
+
+.filler1{
+grid-column: span 6;
+}
+.gridContainer3 :nth-child(6){
+grid-area: 4 / 5 / 7 / 9;
+background-color: aqua;
+}
+.gridContainer3 :nth-child(7){
+grid-area: 5 / 7 / 8 / 10;
+background-color: aquamarine;
+}
+
+#uzduotis{
+height: 200vh;
+}
+#gridUzduotis{
+display: grid; 
+grid-template-columns: 1fr 2fr 1fr 5px 1fr 2fr 1fr;
+grid-template-rows: 1fr 3fr 1fr 30px 1fr 3fr 1fr;  
+margin: 0 auto;
+column-gap: 10px;
+row-gap: 15px;
+}
+#gridUzduotis .img{
+background-color: rgba(133, 144, 144, 0.098);
+}
+#gridUzduotis :nth-child(1){
+grid-area: 1 / 2 / 3 / 4;
+background-repeat: no-repeat;
+background-position: center;
+text-align: justify;
+}
+#gridUzduotis :nth-child(2){ 
+grid-area: 1 / 5 / 3 / 7; 
+background-repeat: no-repeat;
+background-position: center; 
+text-align: justify; 
+}
+#gridUzduotis :nth-child(3){
+grid-area: 5 / 2 / 7 / 4; 
+background-repeat: no-repeat;
+background-position: center; 
+text-align: justify; 
+}
+#gridUzduotis :nth-child(4){    
+grid-area: 5 / 5 / 7 / 7;
+background-repeat: no-repeat;
+background-position: center;
+text-align: justify;
+}

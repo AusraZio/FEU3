@@ -1,0 +1,38 @@
+@import url('https://necolas.github.io/normalize.css/');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#paveldejimas >ul{ 
+    color: red;
+    font-size: 10px;
+
+    margin-left: 50px;
+    border: 3px solid black;
+
+    list-style-type: square;
+}
+#priorities p{
+    color: blue;
+}    
+main section p{
+    color: red;
+}
+
+.redText{
+    color: red;
+}
+#priorities a{
+    text-decoration: none;
+    
+}
+.veryImportant{
+    columns: red;
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+}

@@ -1,0 +1,86 @@
+html{
+scroll-behavior: smooth;
+}
+header{
+background-color: rgb(95, 225, 95);
+height: 100px;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo, .MainMenu{
+display: inline;
+}
+.logo img{
+height: 80px;
+width: auto;
+}
+.MainMenu{
+float: right;
+padding: 20px 50px 5px 0px;
+}
+.MainMenu ul{
+padding: 0;
+margin: 0;
+list-style-type: none;    
+}
+.MainMenu > ul > li{
+display: inline-block;
+margin-right: 10px;
+}
+.MainMenu{
+float: right;
+padding: 20px 50px 5px 0px;
+color: rgb(8, 4, 4);
+height: 50px;
+position: sticky ;
+text-align:left;
+}
+.logo img{
+height: 80px;
+width: auto;
+}
+.textContainer{
+height: 800px;
+width: 800px;
+display: flex;
+margin-left: 500px;
+text-align: justify;
+}
+.text1{
+width: 400px;
+height: 400px;
+background-color: white;
+}
+.text2{
+width: 400px;
+height: 400px;
+background-color: white;
+margin-left: 50px;
+}
+.button1{
+display: inline-block;
+width: unset;
+padding: 10px;
+background-color: rgb(49, 230, 49);
+color: white;
+margin-left: 280px;
+}
+.button2{
+display: inline-block;
+width: unset;
+padding: 10px;
+background-color: rgb(49, 230, 49);
+color: white;
+margin-left: 300px;
+}
+.footer {
+position: auto;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgb(209, 204, 209);
+color: black;
+text-align: center;
+padding: 20px;
+}

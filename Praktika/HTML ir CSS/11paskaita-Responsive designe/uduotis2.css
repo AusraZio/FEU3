@@ -1,0 +1,41 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+html{
+scroll-behavior: smooth;
+}
+body{
+margin: 0;
+background-color: #c1b0b0;
+}
+header{
+display: flex;
+align-items: center;
+height: 80px;
+position: sticky ;
+top: 0;
+z-index:100;
+}
+.Mainmenu ul{
+padding: 0;
+margin: 0;
+list-style-type: none;    
+}
+.Mainmenu{
+display: inline;
+float: left;
+padding: 20px 50px 5px 0px;
+}
+.Mainmenu > ul > li{
+display: inline-block;
+margin-right: 10px;
+}
+.Mainmenu > ul > li{
+border-radius: 50px 15px;
+background-color: #8b8bc6;
+background-position: left top;
+background-repeat: repeat;
+padding: 20px;
+height: 50px
+}
+.logo{
+    
+}

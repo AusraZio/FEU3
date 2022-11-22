@@ -1,0 +1,30 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+section{
+background-color: rgb(37, 86, 37);
+margin-right: 20px;
+text-align: center;
+}
+.forma{
+margin: 0 auto;
+width: 80%;
+padding: 30px 25px;
+display: inline-block;
+box-sizing: border-box;
+}
+.forma h1, h3{
+    margin-top: 0;
+}
+.inlineBlock{
+display: inline-block;
+}
+.input > div{
+display: block;
+width: 48%;
+margin: 5px auto;
+}
+#task{
+margin: 0 0 10px 2px;
+font-size: 14px;
+margin-top: 0;
+}

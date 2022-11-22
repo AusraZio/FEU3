@@ -1,0 +1,125 @@
+body{
+    height: 600vh;
+}
+h2{
+    color: red;
+    letter-spacing:5px ;
+}
+
+.klasesVardas{
+    font-size: italic;
+    font-style:italic;
+    font-weight: bold;
+}
+
+.svarbustekstas2{
+    color: red;
+}
+
+#remeliai{
+    border: 3px dashed lightcyan;
+}
+
+#melynasTekstas{
+    color: blue;
+}
+
+.w400{
+ width: 400px;
+}
+.h100{
+    height: 100ox;
+}
+.wrap{
+    border: 1px solid rgb(0, 0, 0);
+  }
+  .display_ib{
+    display: inline-block;
+  }
+  .noTextSize{
+    font-size: 0;
+  }
+.kvadratas{
+    width: 150px;
+    height: 150px;
+    background-color: beige;
+    border: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px; 
+}
+.linijinis{
+    display: inline;
+}
+.blokinis{
+    display: block;
+}
+.linijinisblokinis{
+    display: inline-block;
+    .
+}
+  .yellowBg{
+    background-color: yellow;
+  }
+  .greenBg{
+    background-color: green;
+  }
+  .redBg{
+    background-color: red;
+  }
+  .ltFlag{
+    display: inline-block;
+    height: 150px;
+    width: 100px;
+  }
+
+  .lvFlag{
+    display: inline-block;
+    height: 150px;
+    width: 100px;
+  }
+  .redBg{
+    background-color: red;
+    color: red;
+  }
+  .whiteBg{
+    background-color: white;
+    color: white;
+  }
+  .redBg{
+    background-color: red;
+    color: red;
+  }
+.t10{
+    top: 10px;
+}
+.r30{
+    right: 30px;
+}
+.b50{
+    bottom: 50px;
+}
+.l80{
+    left: 80px;
+}
+.z5{
+    z-index: 5;
+}
+.z10{
+    z-index: 10;
+}
+.static{
+    position: static;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.sticky{
+    position: sticky;
+}

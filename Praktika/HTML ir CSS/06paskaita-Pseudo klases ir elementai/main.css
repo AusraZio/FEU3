@@ -1,0 +1,80 @@
+p.rytoTekstas#hallo{
+    font-weight: bold;
+}
+.rytoTekstas + p{
+    color: red;
+}
+h1.heading ~ *{
+    background-color: aqua;
+}
+[href]{
+    color: rgb(141, 53, 158);
+}
+
+[class$=head]{
+    color: blue;
+}
+
+
+a:link{
+    background-color: aquamarine;
+}
+a:visited{
+    background-color: yellow;
+}
+a:hover{
+    background-color: green;
+}
+a:active{
+    background-color: brown;
+}
+p:empty{
+    height: 10px;
+    background-color: blueviolet;
+}
+li::marker{
+    color: orange;
+}
+.selektoriuPvz > :not(div){
+    background-color: blanchedalmond;
+}
+.selektoriuPvz :nth-last-of-type(2n){
+    color: green;
+}
+.tekstas + th{
+    color: red;
+}
+li::marker{
+    color: red;
+}
+li::before{
+content: ":)";
+color: black;
+font-size: 30px;
+}
+li::after{
+    content: "(:";   
+}
+th.eilesNumeris{
+    color: red;
+}td.skaicius{
+    color: red;
+}
+.pirmaEilute{
+    background-color: aquamarine;
+}
+.eilute1 :nth-child(even){
+    background-color: purple;
+}
+.eilute2 :nth-child(odd){
+    background-color: orange;
+}
+.eilute3 :nth-child(even){
+    background-color: purple;
+}
+.eilute4 :nth-child(odd){
+    background-color: orange;
+}
+.eilute5 :nth-child(even){
+    background-color: purple;
+}

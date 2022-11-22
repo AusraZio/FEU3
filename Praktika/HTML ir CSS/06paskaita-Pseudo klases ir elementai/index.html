@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 paskaita- Pseudo klases ir elementai</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <!--
+            Pseudo klases ir elementai (selektoriai)
+            Multimedijos elementai (video,audio, maps, iframe)
+            Lenteles su pseudo klases/elementais
+            Formos su pseudo klases/elementais
+            Animacijos ir perejimai
+        -->
+        <main>
+            <section id="pseudoSelektoriai">
+                <h1>
+                <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">Pseudo selektoriai</a>
+            </h1>
+                <ul>
+                    <li>*</li>
+                    <li>element</li>
+                    <li>.class</li>
+                    <li>#id</li>
+                    <li>selector1, selector2</li>
+                    <li>selector1 selector2</li>
+                    <li>selector1 > selector2</li>
+                    <li>element.class#id - elementas turintis nurodyta klase/klases ir/arba nurodyta id</li>
+                    <li>selector1 + selector2 - is karto uz selector1 einantis selector2 (tame paciame lygmenyje)</li>
+                    <li>selector1 ~ selector2 - uz selector1 visi einantys selector2 (tame paciame lygmenyje)</li>
+                    <li>[attribute] - atributas</li>
+                    <li>[attribute=value] - atributas turintis nurodyta reiksme</li>
+                    <li>[attribute~=value] - atributas, kurio reiksmeje yra nurodytas zodis</li>
+                    <li>[attribute*=value] - atributas, kurio reiksmeje yra nurodytas zodzio dalis</li>
+                    <li>[attribute|=value] - atributas, kurio reiksme yra value arba value-...(kazkas)</li>
+                    <li>[attribute^=value] - atributas, kurio reiksme pprasideda value...</li>
+                    <li>[attribute$=value] - atributas, kurio reiksme pasibaigia ...value</li>
+                    <li>:link - paprasta/nelankyta nuoroda</li>
+                    <li>:visited - lankyta nuoroda</li>
+                    <li>:hover - uzejusi pele (kursorius)</li>
+                    <li>:active - aktyvi( paspaudimo momento) nuoroda</li>
+                    <li>element:empty - tuscias elementas(be content)</li>
+                    <li>::marker - saraso elementu zymes</li>
+                    <li>:not(selector) - neparenka nurodyto selektoriaus </li>
+                    <li>:firs-child - parenka pirmaji vaikini elementa</li>
+                    <li>:last-child - parenka paskutiniji vaikini elementa </li>
+                    <li>:only-child - parenka vieninteli vaikini elementa (jei jis yra vienas) </li>
+                    <li>:first-of-type - parenka pirmaji nurodyto tipo elementa</li>
+                    <li>:last-of-type - parenka paskutini nurodyto tipo elementa</li>
+                    <li>:only-of-type - parenka vieninteli nurodyto tipo elementa</li>
+                    <li>:nth-child(n) - parenka nurodyta arba nurodytus vaikinius elementus</li>
+                    <li>:nth-last-child(n) - nuo galo parenka nurodyta arba nurodytus vaikinius elementus</li>
+                    <li>:nth-of-type(n) - parenka nurodyta elementa pagal tipa</li>
+                    <li>:nth-last-of-type(n) - nuo galo parenka nurodyta elementa pagal tipa</li>
+                    <li>::before - sukuria kazkoki turini pries elementa</li>
+                    <li>::after - sukuria kazkoki turini uz elementp</li>
+                    <li>input:checked - pazymetus/parinktus radio/checkbox/option pasirinkimas</li>
+                    <li>input:default - is anksto parinktas pasirinkimas</li>
+                    <li>input:disable - input'as, kuris turi disabled atributa</li>
+                    <li>input:enable - input'as kuris neturi disabled atributo</li>
+                    <li>input:focus - input'as, ant kurio yra paspausta/fokusuotas</li>
+                    <li>input:in0range - input'as, kurio verte ya nurodytose ribose</li>
+                    <li>input:out-of-range - input'as, kurio verte yra uz nurodytu ribu</li>
+                    <li>input:indeterminate - input'as, kurio reiksme neapibrezta</li>
+                    <li>input:invalid - input'as, kurio verte yra netinkama</li>
+                    <li>input:valid - input'as, kurio verte yra tinkama</li>
+                    <li>input:required - input'as su required atributu</li>
+                    <li>input:optional - input'as be required atributo</li>
+                    <li>input:read-only - input'as su readonly atributu</li>
+                    <li>input:read-write - input'as be readonly atributo</li>
+                    <li>::placeholder - ivesties laukelio placeholder atributo reiksmes parinkimas stilizavimui</li>
+                    <li>element::first-letter - parenka elemento pirmaja raide</li>
+                    <li>element::first-line - parenka elemento pirmaja eilute</li>
+                    <li>::selection - parenka vartotojo pazymeta informacija</li>
+                </ul>
+                <div class="selektoriuPvz">
+                    <p class="rytoTekstas" id="hallo">labas rytas</p>
+                    <p>tekstas</p>
+                    <h1>tekstats more</h1>
+                    <p>tekstas more and more</p>
+                    <h1 class="heading irDar">tekstas more2</h1>
+                    <div>
+                        <!--
+                        <p>labas</p>
+                    -->
+                    </div>
+                    <p>tekstas more and more2</p>
+                    <p>tekstas more and more3</p>
+                    <p>tekstas more and more4</p>
+                    <h1>tekstas more1</h1>
+                    <h1>tekstas more2</h1>
+                    <p>labas rytas</p>
+                </div>
+            </section>
+            <section id="pseudoSelektoriai">
+            </section>
+            <section id="multimedija">
+                <h1>Multimedija</h1>
+                <p>
+                    Inframe - skirtas ikelti kitos svetaines dali/turini, arba visa svetaine i savo svetaine.
+                </p>
+                <div id="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/38y_1EWIE9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="audio">
+                <audio controls>
+                    <source src="" type="audio/mp3">
+                    <source src="" type="">
+                    <source src="" type="">
+                </audio>
+            </div>
+            <div id="maps">
+                <div id="maps">JS prijungimas</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36909.35161388129!2d25.2103317876381!3d54.67734168931155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1668415518028!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="page">
+                <inframe src="https://www.15min.lt/" height="400" width="500" frameborder="0">
+                </inframe>
+            </div>
+            </section>
+        </main>
+        <div>
+            <table border>
+                <thead class="pirmaEilute">
+                    <tr class="tekstas">
+                        <th class="eilesNumeris">Eiles numeris</th>
+                        <th>Pavadinimas</th>
+                        <th>Salis</th>
+                        <th>Buvau/nebuvau</th>
+                        <th>Sostine</th>
+                    </tr>
+                    <tbody>
+                        <tr class="eilute1">
+                            <td>1</td>
+                            <td>Venecija</td>
+                            <td>Italija</td>
+                            <td>Buvau</td>
+                            <td>Roma</td>
+                        </tr>
+                        <tr class="eilute2">
+                            <td>2</td>
+                            <td>Ryga</td>
+                            <td>Latvija</td>
+                            <td>Buvau</td>
+                            <td>Ryga</td>
+                        </tr>
+                        <tr class="eilute3">
+                            <td>3</td>
+                            <td>Talinas</td>
+                            <td>Estija</td>
+                            <td>Buvau</td>
+                            <td>Talinas</td>
+                        </tr>
+                        <tr class="eilute4">
+                            <td>4</td>
+                            <td>Lenkija</td>
+                            <td>Zakopane</td>
+                            <td>Nebuvau</td>
+                            <td>Varsuva</td>
+                        </tr>
+                        <tr class="eilute5">
+                            <td class="skaicius">5</td>
+                            <td>Vokietija</td>
+                            <td>Bremenas</td>
+                            <td>Nebuvau</td>
+                            <td>Berlynas</td>
+                        </tr>
+                        </tbody>
+                </thead>
+            </table>
+        </div>
+</body>
+</html>
