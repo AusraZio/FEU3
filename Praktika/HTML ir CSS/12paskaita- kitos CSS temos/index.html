@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12 paskaita</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.scss">
 </head>
 <body>
     <!--
         Git ir Github
         Puslapio prieinamumas (accessibility)(teoriskai trumpai drutai, gale praktika)
-        Preprocecoriai (SCSS, SASS)
+        Preprocecoriai (SCSS, SASS) + variables + dydziai
         CSS Framework
     -->
-    <section id="git">
+    <section id="gitirGithub">
+        <p>
+            <strong>Git</strong> -kodo versijavimo programa
+        </p>
+        <p>
+            <strong>GitHub</strong> - svetaine, kurioje keliamos kodo versijos
+        </p>
         <ol>
             <li>isirasyti Git'a</li>
             <li>Patikrinti ar git'as irasytas terminale parasius "git --version"</li>
@@ -24,11 +30,97 @@
             <li>git config --global user.name AusraZio</li>
             <li>git config --global user.email ausra.ziogaite@gmail.com</li>
             <li>git config --global core.editor code</li>
-            <li>git config --global core.autocrlf true</li>
+            <li>git config --global core.autocrlf true | input (true jeigu windows)</li>
             <li>git config --global -e</li>
+            </ol>
         </li>
-        </ul>
+        <li>patikrinti ar tvarkingas cinfig failas- git config --global --edit</li>
+        <li>Source Control dalyje paspausti Publish to Github</li>
     </ol>
+    </section>
+    <section id="accessibility">
+        <h1>Accessibility</h1>
+        <ul>
+            <li>Suvokiamumas</li>
+            <li>Veikiamumas</li>
+            <li>Suprantamumas</li>
+            <li>Tvirtumas</li>
+        </ul>
+        <p>
+            Puslapiu pritaikymas zmonems su negalia. Pvz: prastas regimumas, klausa, akliesiems, daltonikamas, prasto apsvietimo salygomis.
+        </p>
+        <p>
+            Visi standartai yra aprasyti <a href="http://w3.org/WAI/" target="_blank">cia</a>
+        </p>
+        <p>
+            automatiniai skaitytuvai <a href="htpp://webaim.org/projects/screenreadersurvey8" target="_blank">apklausa</a>.<br>
+            Kas yra automatinis skaitytuvas <a href="https://youtu.be/dEb15jvLKGQ" target="_blank">video</a>
+        </p>
+        <p>
+            alternatyvus tekstai paveiksliukams ir video <a href="htpp://axesslab.com/alt-texts/" target="blank">info</a>
+        </p>
+        <p>
+            ARIA atributai ir ju nauda <a href="htpp://www.w3.org/TR/wai-aria/" target="_blank">info</a>
+        </p>
+        <p>
+            tinklapio prisitaikymas prie vartotojo irenginio <a href="" target="_blank">info</a>
+        </p>
+        <p>
+            meta tag'ai nusako svetaines informacija <A href="" target="_blank">info</A>
+        </p>
+    </section>
+    <section id="preprocessors">
+        <h1>Preprocesoriai</h1>
+        <div>
+            <h3>SASS / SCSS</h3>
+        </div>
+        <p>
+            very very gooood
+        </p>
+        <p>
+            Suteikia galimybe rasyti CSS'a naujoviskesniu budu, kur galima lengvai kurti ir naudoti kintamuosius;
+            nest'inti; rasyti: salygas, ciklus, funkcijas, mix-in'us ir t.t. <br>
+            naudojant kazkuri CSS preprocesiruy reikia parasyta koda kovertuoti i paprasta CSS, kuri supranta svetaine
+        </p>
+    </section>
+    <section id="CSS_framework">
+        <h1>CSS Frameworks</h1>
+        <ul>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+            <li>Bulma</li>
+            <li>UI Kit</li>
+            <li>Materialize</li>
+            <li>Milligram</li>
+            <li>Foundation</li>
+            <li>...</li>
+        </ul>
+        <div class="twoCols">
+            <div>
+        <h3>Pros</h3>
+        <ul>
+            <li>Nereikia/reikia labai mazai rasyti CSS</li>
+            <li>Pagreitina darba</li>
+            <li>Lengvai naudoti</li>
+            <li>Suprogramuota responsiveness</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Cons</h3>
+        <ul>
+            <li>Neunikalus dizainas</li>
+            <li>Daug perteklinio/nepanaudoto kodo</li>
+            <li>Reikalauja ismokti laiko naudotis</li>
+            <li>Prastesnis google paieskos sistemos ivertinimas</li>
+        </ul>
+    </div>
+   </div>
+   <p>
+    <strong>CSS Framework</strong> - kazkieno kito parasytas CSS kodas, kuri tu gali naudoti.<br>
+    Norint naudoti kazkieno framework'a, reikia ji prijungti prie savo kodo (CDN).<br>
+    Dauguma framwork'u veikia suteikiant ju aprasytas klases kazkokiems HTML elementams.<br>
+    Yra<a>Classless</a> CSS framwork'u. Juos naudojant, nereikia suteikti klasiu jokiems HTML elementams. Viskas aprasyta naudojant tag'u selektorius.
+   </p>
     </section>
 </body>
 </html>

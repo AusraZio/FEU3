@@ -1,0 +1,20 @@
+:root{
+--color-warning: blue;
+/* font-size: 8px; */
+}
+
+#preprocessors h1 {
+  font-size: 2rem;
+}
+#preprocessors div{
+display: flex;
+align-items: baseline;
+font-size: 10px;
+}
+#preprocessors div h3 {
+  font-size: 2em;
+  color: var(--color-warning);
+}
+#preprocessors div p {
+  color: var(--color-warning);
+}/*# sourceMappingURL=main.css.map */

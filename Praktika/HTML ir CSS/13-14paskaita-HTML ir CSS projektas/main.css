@@ -1,0 +1,135 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+
+
+html{
+scroll-behavior:smooth ;
+}
+body{ 
+margin: 0;
+background-color:white;
+}
+header{
+background-color: white;
+top:0;
+padding-top: 5px;
+}
+nav a {
+color: rgb(3, 2, 2);
+margin: 0 20px;
+}
+.MainMenu{
+float: center;
+color: white;
+text-align: center;
+height: 50px;
+position: sticky ;
+text-align: center;
+}
+.MainMenu ul{
+padding: 0;
+margin: 0;
+list-style-type: none;    
+}
+.MainMenu > ul > li{
+display: inline-block;
+margin-right: 10px;
+background-color: white;
+color: black;
+text-align: center;
+}
+.purple{
+ color: #645cff;   
+}
+.Exploring{
+background-color: #645cff;
+color: aliceblue;
+text-align: center;
+height: 500px;
+padding: 150px;
+display: block;
+margin: 10px auto;
+}
+.Button{
+background-color: #645cff;
+color: aliceblue;
+border-radius: 5px 5px;   
+}
+.About{
+text-align: center;   
+}
+.Services{
+text-align: center;  
+}
+.Services2{
+height: 500px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-content: center;
+gap: 10px 30px;
+}
+.Tours{
+text-align: center;    
+}
+#Tibet{
+background-image: url(./tibet.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 600px;
+height: 300px;
+padding: 25px;
+display: block;
+margin:10px auto;
+}
+#Java{
+background-image: url(./java.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 600px;
+height: 300px;
+padding: 25px;
+display: block;
+margin:10px auto;   
+}
+#Hong{
+background-image: url(./hong-kong.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 600px;
+height: 300px;
+padding: 25px;
+display: block;
+margin:10px auto;  
+}
+#Hong{
+background-image: url(./hong-kong.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 600px;
+height: 300px;
+padding: 25px;
+display: block;
+margin:10px auto;  
+}
+#Kenya{
+background-image: url(./Kenya-Massai-woman.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 600px;
+height: 300px;
+padding: 25px;
+display: block;
+margin:10px auto;  
+}
+.topleft {
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 18px;
+}
