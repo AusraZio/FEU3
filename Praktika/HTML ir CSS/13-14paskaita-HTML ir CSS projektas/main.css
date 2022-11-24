@@ -1,6 +1,4 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
-
 
 html{
 scroll-behavior:smooth ;
@@ -53,7 +51,11 @@ margin: 10px auto;
 .Button{
 background-color: #645cff;
 color: aliceblue;
-border-radius: 5px 5px;   
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;  
 }
 .About{
 text-align: center;   
@@ -72,64 +74,63 @@ gap: 10px 30px;
 .Tours{
 text-align: center;    
 }
-#Tibet{
-background-image: url(./tibet.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-width: 600px;
-height: 300px;
-padding: 25px;
-display: block;
-margin:10px auto;
+.toursCards{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
 }
-#Java{
-background-image: url(./java.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-width: 600px;
-height: 300px;
-padding: 25px;
-display: block;
-margin:10px auto;   
+.tuorsCard{
+height: 63%;
+width: 100%;
+position: relative;
 }
-#Hong{
-background-image: url(./hong-kong.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-width: 600px;
-height: 300px;
-padding: 25px;
-display: block;
-margin:10px auto;  
+.img{
+height: 100%;
+width: 100%;
 }
-#Hong{
-background-image: url(./hong-kong.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-width: 600px;
-height: 300px;
-padding: 25px;
-display: block;
-margin:10px auto;  
-}
-#Kenya{
-background-image: url(./Kenya-Massai-woman.png);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-width: 600px;
-height: 300px;
-padding: 25px;
-display: block;
-margin:10px auto;  
-}
-.topleft {
+.p{
 position: absolute;
-top: 8px;
-left: 16px;
-font-size: 18px;
+top: 30px;
+left: 0;
+margin: 0;
+background-color: blueviolet;
+}
+
+.Gallery{
+text-align: center;    
+}
+.img{
+background-color: #645cff;  
+gap: 30px 30px;
+}
+
+.info{
+background-color: #645cff;
+color: aliceblue;
+text-align: left;
+height: 500px;
+padding: 150px;
+display: block;
+}
+
+
+.footer {
+position: auto;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+
+
+
+@media (max-width: 1020px){
+.mainMenu{
+ background-image: url(./hiking.PNG);
+ height: 200px;
+ width: 400px;   
+}
 }

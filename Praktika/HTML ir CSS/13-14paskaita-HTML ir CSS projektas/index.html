@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiking Tours</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/.../6.2.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -22,11 +23,10 @@
           </div>
        </nav>
     </header>
-    <section id="Icons">
-        <A href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></A>
-            <i class="bi bi-facebook" style="font-size:24px;color:purple"></i>
-            <spam class="bi bi-twitter" style="font-size:24px;color:purple"></spam>
-            <spam class="bi bi-linkedin" style="font-size:24px;color:purple"></spam>
+    <section>
+            <i class="fa-brands fa-facebook" style="font-size:24px;color:purple"></i>
+            <i class="fa-brands fa-twitter" style="font-size:24px;color:purple"></i>
+            <i class="fa-brands fa-linkedin" style="font-size:24px;color:purple"></i>
         </section>
         <section class="Exploring">
         <div>
@@ -71,21 +71,90 @@
     <div class="Tours">
         <h1>FEATURED <span class="purple">TOURS</span></h1>
     </div>
-    <div id="Tibet">
-        <h2>August 14th, 2022</h2>
-        <h1>Tibet Adventure</h1>
+    <section>
+      <div class="toursCards">
+        <div class="toursCard">
+         <div class="tourImg">
+            <img src="./tibet.jpg" alt="kalnai">
+            <p>August 14th, 2022</p>
+         </div>
+        <div class="tourInfo">
+            <h1>Tibet Adventure</h1>
+            <div>
+                <p>China</p>
+                <p>6 Days<br>From $2100</p>
+            </div>
+        </div>
+         </div>
+      </div>
+      <div class="toursCards">
+        <div class="toursCard">
+         <div class="tourImg">
+            <img src="./java.jpg" alt="kalnai">
+            <p>October 1th, 2022</p>
+         </div>
+        <div class="tourInfo">
+            <h1>Best Of Java</h1>
+            <div>
+                <p>Indonesia</p>
+                <p>10 Days<br>From $4100</p>
+            </div>
+        </div>
+         </div>
+      </div>
+      <div class="toursCards">
+        <div class="toursCard">
+         <div class="tourImg">
+            <img src="./hong-kong.jpg" alt="kalnai">
+            <p>September 26th, 2022</p>
+         </div>
+        <div class="tourInfo">
+            <h1>Explore Hong Kong</h1>
+            <div>
+                <p>Hong Kong</p>
+                <p>12 Days<br>From $3100</p>
+            </div>
+        </div>
+         </div>
+      </div>
+      <div class="toursCards">
+        <div class="toursCard">
+         <div class="tourImg">
+            <img src="./tibet.jpg" alt="kalnai">
+            <p>December 5th, 2022</p>
+         </div>
+        <div class="tourInfo">
+            <h1>Kenya Highlights</h1>
+            <div>
+                <p>Kenya</p>
+                <p>22 Days<br>From $5400</p>
+            </div>
+        </div>
+         </div>
+      </div>
+    </section>
+    <div>
+        <a href="http://www.google.lt" target="blank">All Tours</a>
     </div>
-    <div id="Java">
-        <h2>October 1th, 2022</h2>
-        <h1>Best Of Java</h1>
-    </div>
-    <div id="Hong">
-        <h2>September 26th, 2022</h2>
-        <h1>Explore Hong Kong</h1>
-    </div>
-    <div id="Kenya">
-        <h2>December 5th, 2022</h2>
-        <h1>Kenya Highlights</h1>
+    <section class="Gallery">
+        <h1>OUR <span class="purple">GALLERY</span></h1>
+        <div class="img">
+        <img src="./ddznAc8UxXSrEVKtQEYUtW.jpg" alt="" height="900px" witdth="300px">
+        <img src="./hong-kong.jpg" alt="" height="1000px" witdth="600px">
+        <img src="./java.jpg" alt="" height="900px" witdth="300px">
+        <img src="./Kenya-Massai-woman.png" alt="" height="900px" witdth="300px">
+        </div>
+    </section>
+    <section class="info">
+        <h1>
+            WANT LATEST TOUR<br> INFO AND UPDATES?
+        </h1>
+        <P>Sign Up For Newsletter And<br> Stay Up To Date</P>
+        <input type="email" placeholder="Your Email"> 
+        <button class="Button">SUBMIT</button>
+    </section>
+    <div class="footer">
+        <p>Copyright © Hiking Tours 2022. All Rights Reserved.</p>
     </div>
 </body>
 </html>
