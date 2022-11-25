@@ -1,0 +1,174 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+
+html{
+scroll-behavior:smooth ;
+}
+
+body{ 
+margin: 0;
+}
+
+header{
+height: 80px;
+position: sticky ;
+}
+
+.logo, .MainMenu{
+display: inline;
+}
+.logo img{
+height: 50px;
+width: auto;
+}
+.MainMenu{
+float: right;
+}
+.MainMenu ul{
+padding: 0;
+margin: 0;
+list-style-type: none;    
+}
+.MainMenu > ul > li{
+display: inline;
+margin-right: 10px;
+}
+.link{
+text-decoration: none;
+color: grey;
+font-size: 15px;
+line-height: 80px;
+}
+.About{
+width: 800px;
+height: 300px;
+padding: 25px;
+display: block;
+margin:10px auto;   
+}
+.pink{
+color: rgb(252, 69, 157);
+}
+.button{
+border-radius: 100rem;
+padding: 1rem;
+font-family: 'Helvetica';
+letter-spacing: 0.47px;
+font-weight: bold;
+font-size: 1rem;
+padding: 1rem 3rem;
+color: #110f10;
+box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+border: solid 3px transparent;
+background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ffefce, #f1315a, #56a9cc);
+background-origin: border-box;
+background-clip: content-box, border-box;
+box-shadow: 2px 1000px 1px #fff inset;
+}
+.ColorBox{
+padding: 25px;
+display: block;
+margin:50px auto; 
+box-sizing: border-box;
+display: flex;
+width: 800px;
+height: 200px;
+overflow: hidden;
+background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ffefce, #f1315a, #56a9cc);
+border-radius: 10px;
+text-align: center;
+}
+.text{   
+ margin: 50px;
+ text-align: justify;
+}
+.text2{   
+margin: 50px auto;
+text-align: justify;
+}
+.Icon{
+
+}
+.korteles{
+width: 1000px;
+height: 400px;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;   
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+margin: 50px auto;
+}
+.kortele{
+display: inline-block;
+position: relative;
+border-radius: 25px;
+background-color: #28272c;
+border: 2px solid #28272c;
+padding: 20px;
+width: 200px;
+height: 158px;
+}
+.kortelesImg{
+border-radius: 10px;
+}
+.Girl{
+width: 900px;
+height: 500px;
+padding: 25px;
+display: block;
+margin:10px auto;    
+}
+
+.footer{
+
+}
+
+.footer2 {
+color: rgb(98, 89, 89);
+}
+.right{
+float: right;
+}
+
+.GridBox{
+width: 1000px;
+height: 400px;
+justify-content: left;
+flex-wrap: wrap;
+gap: 5px;   
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+margin: 50px; 
+}  
+
+.SmallBox{
+display: inline-block;
+height: 63%;
+width: 100%;
+position: relative;
+text-align: center;
+}
+
+@media (max-width: 678px){
+body{
+display: block;
+}
+#MainMenu{
+display: block;
+}
+#korteles > div{
+width: 80%;
+margin: 0 auto;
+}
+#kortele > div{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#GridBox > div :nth-child(3){
+height: 200px;
+width: 400px;
+}
+}
+  
