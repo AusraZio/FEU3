@@ -80,7 +80,7 @@ let menesis5 = "Geguze";
  console.log(masyvas);
  masyvas[1] = 'pakeistas';
  masyvas.push("push?"); //pish - prie masyvo galo prideda nauja reiksme
- masyvas.unshift("unshift?"); //unshift - prie masyvo pradzios prideda naija reiksme
+ masyvas.unshift("unshift?"); //unshift - prie masyvo pradzios prideda nauja reiksme
  console.log(masyvas);
  var masyvoMetoduBandymai = masyvas.pop(); // pop - isima duomeni is masyvo galo
  masyvoMetoduBandymai = masyvas.shift(); // shift - isisma pirma masyvo elementa
@@ -338,6 +338,12 @@ let zmogus6 = {
   ];
   console.log(mixed9);
 
+   // Palyginti ir į konsolę išvesti kokias nors:
+  //4.1) 2.1 konteinerio reikšmes.
+  //4.2) 2.2 konteinerio reikšmes.
+  //4.3) 2.3-2.6 konteinerių reikšmes su jų viduje esančių konteinerių reikšmėmis.
+  //4.4) 2.3-2.6 konteinerių reikšmes su kitų konteinerių reikšmėmis (3kartus skirtingas reikšmes).
+
 
   //                        Salygos
   /*
@@ -371,6 +377,8 @@ let zmogus6 = {
   number <= 0 ? console.log("-infinity -> 0") : console.log("0 -> 20");
   console.groupEnd
  }
+
+
  ///                    5 uzduotis
 
  /*Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš object kintamojo (object kintamasis turi turėti bent 4 kintamuosiuos savo viduje)).
@@ -469,12 +477,13 @@ for(let i = 0; i < 50; i++){
 console.log(skaiciuMasyvas);
 
 //7) Parašyti ciklą, kuris išspausdintų kas trečią masyvo elementą.
-let skaiciuMasyvas2 = [];
-for(let i = 0; i < 50; i++){
-  skaiciuMasyvas.push(Math.floor(Math.random()*101));
+for(let i = 0; i < skaiciuMasyvas.length; i+=3){
+  console.log(skaiciuMasyvas[i]);
 }
-console.log(skaiciuMasyvas2);
 
 //8) Parašyti ciklą, kuris išspausdintų kas antrą masyvo elementą nuo galo.
+for(let i = skaiciuMasyvas.length - 1; i >= 0; i-=2){
+  console.log(skaiciuMasyvas[i]);
+}
 //9) Parašyti ciklą, kuris iš masyvo išspausdintų tik elementus, kurių reikšmė didesnė negu 54.
 //10) Parašyti ciklą, kuris iš masyvo išspausdintų tik lyginius/nelyginius skaičius. (2ciklai)
