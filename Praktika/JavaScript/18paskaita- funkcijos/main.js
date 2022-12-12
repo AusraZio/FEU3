@@ -213,13 +213,18 @@ function nameNumber(vardas,pavarde) {
 
 //9) Sukurkite funkciją, kuri pagal paduotą skaičių grąžins abecelės raidę (pvz. 0 => A; 1 => B; 2 => C ir t.t.). Hint: Jums reikės pirma sukurti Array su visomis raidėmis (["A", "B", C",..."Z"]), o funkcija paims pagal indeksą atitinkamą raidę.
 
-let abecele = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+/*let abecele = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
     function masyvas9(number){
-      for(const i=0; i < abecele.length; i+=2){
+      for(const i=0; i < abecele.length; i++){
        if(typeof(masyvas9[number]) === 'number');
         return abecele[number];
       }
-    }
+    }*/
+
+    function abecelesRaide(kelinta){
+    const abecele = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    return (alphabet[kelinta-1]);
+  }
 
 //10) Sukurkite funkciją, kuri paims tris parametrus (n1, n2, operator). Operator gali būti "sum", "sub", "div", "multi" (matematinės reikšmės - sudėti, atimti, padalinti, padauginti). n1 ir n2 bus skaičiai. Turite grąžinti atsakymą, kur n1 ir n2 atlikta matematinė operacija (pvz.: 5, 1, "sub" => 4; 6, 3, "sum" => 9...). Hint: Reikės funkcijoje naudoti if-else arba switch.
 
@@ -248,13 +253,14 @@ function math(n1, n2, operator){
 //11) Sukurkite dvi funkcijas: viena grąžina random skaičių nuo 1 iki 10 (įskaitant), kita - gautą skaičių pakelia kvadratu. Iškviesk abi funkcijas vienoje eilutėje (pvz. squareNum(generateRandomNumber()) => 1...100).
 
 var skaicius = [];
-function randomNumber(skaicius){
-  for(let i = 0; i <= 10; i++){
+function randomNumber(){
   return Math.floor(Math.random()*11);
 }
-console.log(skaicius);
-}
 
+function pakelti(){
+  return randomNumber()**2;
+}
+console.log(pakelti());
 
 
 

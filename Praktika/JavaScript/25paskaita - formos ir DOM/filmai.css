@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,700&family=EB+Garamond:ital,wght@1,600&display=swap');
+
+
+/* //3 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+ #second {
+  display: flex;
+  flex-direction: column;
+ }
+/* image  */
+
+img {
+  height: 800px;
+  width: 33%;
+  object-fit: cover; 
+  position: absolute;
+  z-index: -1;
+}
+.image {
+  /* position: absolute; */
+  /* z-index: -1; */
+}
+
+
+/* containers */
+
+.cardsPlace {
+  display: flex;
+  /* display: none; */
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.border {
+  height: 800px;
+  width: 33%;
+  box-sizing: border-box;
+  display: flex;
+
+}
+
+/* text */
+
+.text {
+  display: flex;
+  position: absolute;
+  height: 800px;
+  width: 33%;
+  z-index: 5;
+  align-items: flex-end;
+
+  
+}
+.parts {
+  word-wrap: normal;
+  background-color: rgba(5, 5, 5, 0.864);
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 45%;
+  width: 100%;
+  overflow-y: auto;
+  font-family: 'Cormorant Garamond', serif;
+  color: rgb(255, 255, 255);
+  padding-top: 5px;
+}
+
+
+h5 {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}
+h1 {
+  font-size: 50px;
+  border-bottom: 2px solid white;;
+}
+.IMDB span{
+  color: rgb(241, 9, 9);
+}
+
+/* Hovers */
+
+
+h1:hover {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 21px rgb(47, 25, 153),
+    0 0 82px rgb(85, 78, 166),
+    0 0 92px rgb(56, 18, 195),
+    0 0 151px rgb(49, 68, 61);
+    transition: 1.5s;
+    font-size: 70px;
+}
+
+.parts:hover {
+  background-color: rgb(6, 5, 5);
+  transition: 1s;
+}

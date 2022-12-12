@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 paskaita</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <main>
+        <section id="event">
+            <h1>Events</h1>
+            <p>
+              Ivykiai - puslapyje  vykstantys kazkokie veiksmai/ivykiai (peles paspaudimas, kliavaturos paspaudimas, informacijos pazymejimas, scroll'inimas, formos pateikimas, failo ikelimas/atsisiuntimas..)<br>
+              Noredami stebeti ar nutinka koks ivykis, turime pradzioje nurodyti(selektinti) kurioje DOM dalyje tas ivykis gali nutikti.<br>
+              Nusirodzius (selektinus), kurioje dalyje klausomes ivykio - reikia aprasyti ivykio klausymasi. Tai padarome rasydami "addEventListener" metoda, kuris priima 2 parametrus: koksIvykis (paspaudimas peles, klaviaturos paspaudimas, peles uzejimas), kaDarytiNutikusIvykiui.  
+            </p>
+        </section>
+        <section id="DOM">
+            <h1>Document Object Model</h1>
+            <p>
+                Dokumentas - puslapis, kuriame yra visa vartotojui atvaizduota informacija (tekstas, paveiksliukas, forma, lentele....).<br>
+                Objektas - kazkoks puslapio elementas (nuo html tag'o, iki ikonos ar span tag'o)<br>
+                Modelis - objektu struktura kazkuriame elemente (tekstas, paveiksliukas, forma, lentele....).
+            </p>
+            <p>
+                Noredami per JS selektinti kazkuria DOM dali, turime rasyti toki koda: "document.querySelector" arba "document.querySelectorAll". "QuerySelector" priima 1 parametra - selektoriu (toki koki rasem CSS'e)
+            </p>
+        </section>
+        <section class="blala">
+            <h1>Uzduotis</h1>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.<br>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.<br>
+            </p>
+            <h2>lalalala</h2>
+            <div>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.
+                </p>
+            </div>
+        </section>
+        <section id="calc">
+            <form>
+                <input type="number" name="number1" id="number1">
+                <select name="operator" id="operator">
+                    <option value="add">sudetis</option>
+                    <option value="min">atimtis</option>
+                    <option value="div">daugyba</option>
+                    <option value="nul">dalyba</option>
+                    <option value="degree">kelimas laipsniu</option>
+                    <option value="root">saknies traukimas</option>
+                    <option value="remains">rasti liekana</option>
+                </select>
+                <input type="number" name="number2" id="number2">
+                <input type="submit" value="skaiciuoti">
+            </form>
+            <div id="results" onclick="calc()"></div>
+        </section>
+        <section id="DOM_is_JS">
+
+        </section>
+    </main>
+</body>
+</html>
