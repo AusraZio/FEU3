@@ -11,15 +11,15 @@ let patiekaloSelektoSukurimas = (kelintas) => { // patiekaloSelektoSukurimas fun
   select.setAttribute('name', 'patiekalas' + kelintas); // kitoks nei buvęs name dėka atributo
   select.setAttribute('id', 'patiekalas' + kelintas); // kitoks nei buvęs id dėka atributo
 
-  meniu.forEach(item => { // sukamas ciklas per visus meniu masyvo objektus
-    let option = document.createElement('option'); // sukuriamas option elementas
+    meniu.forEach(item => { // sukamas ciklas per visus meniu masyvo objektus
+     let option = document.createElement('option'); // sukuriamas option elementas
     option.setAttribute('value', item.id); // option elementui suteikiamas value pagal dabartinio meniu masyvo objekto id
-    let text = document.createTextNode(item.pavadinimas); // sukuriamas teksto elementas su dabartinio meniu masyvo objekto pavadinimu
+     let text = document.createTextNode(item.pavadinimas); // sukuriamas teksto elementas su dabartinio meniu masyvo objekto pavadinimu
     option.append(text); // tekstas įkeliamas į option elementą 
     // option.textContent = item.pavadinimas;
     select.append(option);
     select.append(option); // option įkeliamas į selekto elementą
-  });
+   });
 
   let input = document.createElement('input');// sukuriamas input elementas
   input.setAttribute('type', 'number');// nurodomas input tipas "number"

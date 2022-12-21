@@ -1,0 +1,45 @@
+th, table {
+    border: 1px solid black;
+  }
+ 
+ 
+  #carForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color:#537984;
+    margin-top: 20px;
+    padding: 5px;
+    width: 500px;
+  }
+  label {
+    color: white;
+    font-size: 20px;
+  }
+  input {
+    display: block;
+    height: 25px;
+    border: 1px solid #CC231E;
+    border-radius: 5px;
+  }
+  #carForm button {
+    border-radius: 5px;
+    color: white;
+    background-color: #CC231E;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px 0;
+  }
+  img {
+    width: 300px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    background-color: #323f42;
+    width: 500px;
+    padding: 0 5px;
+    text-align: center;
+    color: white;
+  }
