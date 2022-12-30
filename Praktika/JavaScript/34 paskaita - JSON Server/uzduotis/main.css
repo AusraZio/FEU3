@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(222, 173, 112);
+  background-image: url('https://thumbs.dreamstime.com/b/old-text-medieval-book-as-background-bookas-europe-114243492.jpg');
+  background-attachment: fixed;
+  
+}
+
+.btn-danger {
+  background-color: #07d2f6;
+  border-radius: 5px;
+}
+
+.btn-warning {
+  background-color: #f60a0a;
+  border-radius: 5px;
+}
+
+.btnAddBook {
+  background-color: #80b76d;
+  border-radius: 5px;
+}
+
+.btn-danger:hover {
+  background-color: #07d2f6;
+  border-radius: 5px;
+}
+
+.btn-warning:hover {
+  background-color: #f60a0a;
+}
+
+.btnAddBook:hover {
+  background-color: #80b76d;
+}
+
+.btn-danger:focus {
+  box-shadow: 0 0 0 0.2rem rgba(104, 40, 117, 0.678);
+}
+
+.btn-warning:focus {
+  box-shadow: 0 0 0 0.2rem rgba(18, 18, 127, 0.5);
+}
+
+.btnAddBook:focus {
+  box-shadow: 0 0 0 0.2rem rgba(163, 46, 143, 0.5);
+}
+
+#addBookForm {
+  margin: 20px;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 200px;
+  height: 20px;
+}
+
+label{
+  display: block;
+  color: rgb(7, 5, 5);
+  font-weight: bold;
+}
+
+#books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#books .card {
+  margin-bottom: 20px;
+  background-color: bisque;
+  border-radius: 5px;
+}
+
+#books .card img {
+  width: 300px;
+  height: 400px
+}
+
+.card-body {
+text-align: center;
+}
